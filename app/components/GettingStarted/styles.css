@@ -1,0 +1,81 @@
+
+.gettingStarted {
+  font-size: 1.15rem;
+  margin: .5rem -2rem;
+  color: var(--white);
+}
+
+.header {
+  background-color: var(--red);
+  padding: .25rem;
+  border-bottom: .1rem solid var(--light-red);
+}
+
+.title {
+  font-family: var(--heading-font);
+  letter-spacing: .05rem;
+  font-weight: normal;
+  font-size: 1.4rem;
+	text-align: center;
+}
+
+.steps p + .codeBlock { margin-top: .5rem; }
+.steps .codeBlock + p { margin-top: 1.75rem; }
+
+.content {
+  padding: 2rem;
+  background-color: var(--brown);
+	display: flex;
+	flex-flow: column nowrap;
+  justify-content: center;
+}
+
+
+.steps {
+  margin: 0 auto .75rem;
+  max-width: 100%;
+}
+
+.code {
+  font-family: var(--code-font);
+  color: var(--white);
+  font-size: .9em;
+}
+
+.codeBlock {
+  font-family: var(--code-font);
+	display: block;
+	line-height: 1.5rem;
+	padding: .5rem .75rem;
+	border-radius: .25rem;
+  white-space: pre;
+  width: 100%;
+  overflow-y: auto;
+  background-color: rgba(250, 252, 255, .1); /* light blue */
+}
+
+.codeBlock:before {
+	color: var(--light-red);
+	content: '$';
+	margin-right: .25rem;
+}
+
+.closingStatement {
+	color: var(--light-red);
+	margin-top: 1rem;
+	font-size: 1.2rem;
+}
+
+@media (min-width: 30rem) {
+  .closingStatement {
+    text-align: center;
+    font-size: 1.3rem;
+  }
+}
+
+@media (min-width: 40rem) {
+  .gettingStarted { margin: .5rem 0 }
+  .header { border-radius: .25rem .25rem 0 0; }
+  .content { border-radius: 0 0 .25rem .25rem; }
+}
+
